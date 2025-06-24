@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main-container{
+    background-image: url(./image/home.jpg);
+    width: 100%;
+    height: 100%;
+}
+.header{
+    padding: 23px 50px 10px 50px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img{
+    width: 10%;
+    height: 20%;  
+}
+.header-btn{
+    font-size: 15px;
+    padding: 7px 8px;
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: white;
+}
+.header-btn-signin{
+    margin-left: 25px;
+    font-size: 15px;
+    padding: 5px 8px;
+    font-size: larger;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.light{
+    background-image: linear-gradient(0deg,transparent 50%,rgba(0,0,0,.7)),radial-gradient(50% 100%,transparent 0,rgba(0,0,0,.7) 100%);
+}   
+.container{
+    padding: 0px 20px;
+    width: 100%;
+    height: 60vh;
+    color: antiquewhite;
+    text-align: center;
+}
+.container h1{
+    margin-top: 20%;
+    margin-bottom: 1%;
+    font-size: 55px;
+}
+.container span{
+    font-size: 32px;
+    color: antiquewhite;
+}
+.container p{
+    width: 80%;
+    margin-top: 1%;
+    margin-bottom: 20px;
+    padding-left: 18%;
+    font-size: 24px;
+}
+.container input{
+    padding: 15px 250px 15px 10px;
+    margin-right: -10px;
+    font-size: 18px;
+}
+.container button{
+    padding: 15px 50px 15px 50px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+.tv-section{
+    border-top:8px solid #222;
+    border-bottom:8px solid #222;
+    display: flex;
+    color: white;
+    font-size: 27px;
+}
+.tv-title{
+    margin: 100px 0px 0px 100px;
+    padding-top: 2%;
+    text-align: left;
+}
+.tv{
+    margin-right: 2%;
+    width: 60%;
+    position: relative;
+}
+.tv img{
+    width: 100%;
+}
+.tv video{
+    top: -2.5%;
+    left: 13.7%;
+    width: 72%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.mobile-section{
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+.mobile{
+    width: 50%;
+}
+.mobile img{
+    width: 100%;
+}
+.mobile-title{
+    padding: 130px 20px 20px 50px;
+    width: 50%;
+}
+.plus{
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    border-bottom: 8px solid #303030;
+    padding-bottom: 3%;
+}
+.plus h1{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.plus p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25%;
+    padding: 15px;
+    width: 50%;
+    margin-top: 1%;
+    background: #303030;
+} 
+.plus-down{
+    margin-top: 5%;
+}
+.plus-down span{
+    font-size: 80%;
+    margin-left:5%;
+    margin-right: 5%;
+}
+.footer_input input{
+    margin-top: 10px;
+    padding: 15px 100px 15px 10px;
+    margin-right: -10px;
+    font-size: 18px;
+}
+.footer_input button{
+    padding: 15px 30px 15px 30px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+}
+.footer{
+    color: #737373;;
+    margin: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer ul{
+    font-size: 80%;
+    list-style: none;
+    margin: 5%;
+    margin-left: 0%;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul li{
+    margin-bottom: 15%;
+}
+.footer button{
+    width: 20%;
+    padding: 1%;
+    border: 1px solid white;
+    background: rgba(0,0,0,.4);
+    color: white;
+    margin-bottom: 5px;
+}
+#res{
+    display: block;
+}
+@media(max-width:786px){
+    #res{
+        display: none;
+    }
+    .header{
+        padding: 20px 10px 10px 15px;
+    }
+    .header img{
+        width: 30%;
+        height: 20%;  
+    }
+    .container h1{
+        margin-top: 110px;
+        font-size: 25px;
+    }
+    .container span{
+        width: 100%;
+        font-size: 34px;
+    }
+    .container p{
+        margin-top: 2%;
+        padding-left: 0%;
+        width: 100%;
+        font-size: 22px;
+    }
+    .container input{
+        width: 100%;
+        margin-top: 1%;
+        padding-left: 1%;
+    }
+    .container button{
+        padding: 10px;
+        margin-top: 3px;
+        width: 45%;
+        font-size: 18px;
+    }  
+    .tv-section{
+        flex-direction: column-reverse;
+     }
+    .tv-title{
+        padding: 35px;
+        margin: 0px;
+        width: 100%;
+    }
+    .tv-title h1{
+            font-size: 40px;
+    }
+    .tv{
+        width: 100%;
+    }
+    .tv img{
+        width: 100%;
+    }
+    .tv video{
+        margin: 10px;
+        width: 95%;
+        position: static;
+    }
+    .mobile-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile{
+        width: 100%;
+    }
+    .mobile-title{
+        padding: 0px;
+        width: 100%;
+    }
+    .plus p{
+        margin: 0px;
+        width: 100%;
+    }
+    .mobile-section{
+        margin: 25px 35px;
+    }
+    .mobile-section h1{
+        font-size: 40px;
+        padding-bottom: 13px;
+    }
+    .mobile-section p{
+        font-size: 22px;
+    }
+    .footer{
+        margin-left: 20px;
+        margin-right: 0%;
+    }
+    .footer_input input{
+        padding: 15px 60px 15px 10px;
+        margin-right: 0px;
+        font-size: 12px;
+    }
+    .footer_input button{
+        padding: 15px 22px 15px 30px;
+        font-size: 12px;
+    }
+    .footer button{
+        width: 100%;
+    }
+}
+@media(max-width:350px){
+    .header-btn {
+        display: none;
+    }
+}
